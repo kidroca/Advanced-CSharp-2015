@@ -1,0 +1,1 @@
+No colors for the last of the assigmensts for easier testing thorugh Judge 

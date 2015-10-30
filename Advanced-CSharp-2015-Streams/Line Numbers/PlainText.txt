@@ -1,0 +1,31 @@
+1 Начало - Софтуерен университет
+2 .home-page-news-description {
+3 margin-left: 19px;
+4 }
+5 #carousel-news .thumbnail-img, section .thumbnail-img {
+6 width: 100%;
+7 }
+8 .news-slider .read-more-btn {
+9 margin-left: 19px;
+10 }
+11 .video-resource-wrapper {
+12 width: 90%;
+13 }
+14 webshim.polyfill('forms');
+15 !function (f, b, e, v, n, t, s) {
+16 if (f.fbq) return;
+17 n = f.fbq = function () {
+18 n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+19 };
+20 if (!f._fbq) f._fbq = n;
+21 n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+22 t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+23 }(window, document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+24 // Insert Your Custom Audience Pixel ID below.
+25 fbq('init', '911920462219791');
+26 fbq('track', 'PageView');
+27 Software University
+28 СофтУни
+29 За СофтУни
+30 Сертификати
+31 Такси и стипендии
