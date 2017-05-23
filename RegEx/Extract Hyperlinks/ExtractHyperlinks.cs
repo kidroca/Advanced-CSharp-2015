@@ -23,14 +23,14 @@
 
         private static List<string> ExtractLinks(string html)
         {
-            var ancorHrefPattern = 
-                new Regex(@"<a\s+[^>]*?\bhref\s*?=\s*?(""|')(?<href>[\S\s]*?)(\1)[\S\s]*?>");
+            var ancorHrefPattern =
+                new Regex(@"<a([^>]+?)href\s*=\s*(""|'|\s?)(.+?)\2(?=\s{1}|>)");
 
             var extracted = new List<string>();
 
             foreach (Match m in ancorHrefPattern.Matches(html))
             {
-                extracted.Add(m.Groups["href"].Value);
+                extracted.Add(m.Groups[3].Value);
             }
 
             return extracted;
@@ -41,7 +41,7 @@
             var html = new StringBuilder();
 
             string currentLine = String.Empty;
-            while(currentLine != "END")
+            while (currentLine != "END")
             {
                 currentLine = Console.ReadLine();
                 html
